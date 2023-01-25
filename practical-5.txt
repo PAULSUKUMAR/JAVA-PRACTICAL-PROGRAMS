@@ -1,0 +1,37 @@
+//Practical-5: Write Java program to implement multiple inheritance through interface.
+
+interface AnimalEat {
+
+void eat();
+
+}
+
+interface AnimalTravel {
+
+void travel();
+
+}
+
+class AnimalimplementsAnimalEat, AnimalTravel {
+
+public void eat (){
+
+System.out.println("Animal is eating");
+}
+public void travel(){
+
+System.out.println("Animal is travelling"");
+}
+}
+
+public class Student {
+
+public static void main(String args[]) {
+
+Animal a =new Animal();
+
+a.eat();
+
+a.travel();
+}
+}

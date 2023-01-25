@@ -1,0 +1,37 @@
+//Practical-8. Write a Java program to demonstrate Exception Handling 
+class Student
+{
+public static void main(String args[])
+{
+int a=10;
+
+int b=5;
+
+int c=5;
+
+int x,y;
+
+try {
+x=a/(b-c);
+
+}
+
+catch(ArithmeticException e)
+
+{
+
+System.out.println("Division by zero");
+}
+finally
+
+{
+
+System.out.println("This is a finally block");
+
+}
+
+y=a/(b+c);
+
+System.out.println("y="+y);
+}
+}

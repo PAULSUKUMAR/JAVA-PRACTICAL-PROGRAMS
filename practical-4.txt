@@ -1,0 +1,44 @@
+//Practical-4: Write Java program to implement Hierarchical Inheritance
+
+class A
+{
+public void dispA()
+{
+System.out.println("Displaying method A");
+}
+}
+class B extends A
+{
+public void dispB()
+{
+System.out.println("Displaying method B"),
+}
+}
+
+class C extends A
+{
+public void dispC()
+{
+System.out.println("Displaying method C");
+}
+}
+
+public class Student
+{
+public static void main(String args[])
+
+{
+
+Cx=new C();
+
+x.dispC();
+
+x.dispA();
+
+B y=new B();
+
+y.dispB();
+
+y.dispA();
+}
+}

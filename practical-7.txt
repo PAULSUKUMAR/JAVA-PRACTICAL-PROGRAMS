@@ -1,0 +1,75 @@
+//Practical-7 Write a Java program that creates three threads. First thread displays "Good Morning" everyone second, the second thread displays "Hello" every two seconds and the third thread displays "Welcome" every three seconds 
+class A extends Thread
+
+public void run()
+
+{
+
+for(int i=1;i<=5;i++)
+
+System.out.println("Good Morning");
+
+try{
+
+sleep(1000);
+
+}catch(Exception e) {
+
+}
+}
+}
+}
+
+class B extends Thread
+{
+public void run()
+{
+for(int i=1;i<=5;i++)
+{
+System.out.println("Hello");
+
+try{
+
+sleep(2000);
+
+} catch(Exception e) {
+}
+}
+}
+}
+class C extends Thread
+{
+public void run()
+
+{
+
+for(int i=1;i<=5;i++)
+
+{
+
+System.out.println("Welcome");
+
+try{
+
+sleep(3000);
+
+} catch(Exception e) {
+}
+}
+}
+}
+public class Student
+{
+public static void main(String[] args)
+{
+A x=new A();
+
+B y=new B();
+ 
+C z=new C();
+
+x.start();
+y.start();
+z.start();
+}
+}

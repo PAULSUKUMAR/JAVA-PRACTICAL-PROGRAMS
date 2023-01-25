@@ -1,0 +1,67 @@
+/*Practical-3: Write a Java program to create a Student class with followingfields
+
+i. Hall ticket number ii. Student Name iii. Department
+
+Create,,n number of Student objects where,,n value is passed as input to constructor*/
+
+import java.util.*;
+
+public class Main
+{
+public static void main(String[] args)
+{
+Student[] arr;
+
+int Hallticketnumber;
+
+String StudentName;
+
+String Department;
+
+Scanner se=new Scanner(System.in);
+
+System.out.println("enter n value");
+
+int n=sc.nextInt();
+
+arr=new Student[n+1];
+
+for(int i=1;i<=n;i++)
+{
+System.out.println("enter student"++"details");
+
+Hallticketnumber=sc.nextInt();
+
+StudentName=sc.next(); 
+Department=sc.next();
+
+arr[i]=new Student(Hallticketnumber,StudentName,Department);
+}
+for(int i=1;i<n;i++)
+{
+arr[i].display();
+}
+}
+}
+class Student
+{
+int Hallticketnumber;
+
+String StudentName;
+
+String Department;
+
+Student(int x,String y.String)
+{
+Hallticketnumber=x;
+
+StudentName=y;
+
+Department=z;
+}
+public void display()
+{
+System.out.println("Hallticketnumber is "+Hallticketnumber+" Student Name is "+StudentName+" Department is "+Department);
+
+}
+}
